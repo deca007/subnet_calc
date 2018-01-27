@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta charset="UTF-8">
+
+    <title>Pop Subnet Calculator</title>
+</head>
+<body>
+
+<form method="POST" action="/send">
+    <div class="form-group">
+        <h2>Hyve IP Generator</h2><br>
+       <b> Site Name: </b><input type="text" name="site_name" value="ymq01"><br>
+        <b> Subnet s  :  </b><input type="text" name="subnet" value="10.X.X.X"><br>
+        <b> BR01 Lo1: </b><input type="text" name="br01_lo1" value="52.223.255.X"><br>
+        <b> BR02 Lo1: </b><input type="text" name="br02_lo1" value="52.223.255.X"><br>
+        <b> BR01 Lo2: </b><input type="text" name="br01_lo2" value="10.255.126.X"><br>
+        <b> BR01 Lo2: </b><input type="text" name="br02_lo2" value="10.255.126.X"><br>
+    </div>
+
+
+    <label for="dc_type">DC Type</label>
+      <select name="dc_type">
+        <option value="Quartet">Quartet</option>
+        <option value="Duet">Duet</option>
+      </select>
+      <br><br>
+    </div>
+
+        <label for="racks">Total Racks</label>
+      <select name="racks">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+      </select>
+      <br><br>
+    </div>
+
+       <input class="btn btn-primary" type="submit" value="submit">
+    </form>
+
+</body>
+</html>
